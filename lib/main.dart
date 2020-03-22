@@ -10,10 +10,10 @@ class MovieRental extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'MovieRental App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-    );
+        title: 'MovieRental App',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: HomePage());
   }
 }
