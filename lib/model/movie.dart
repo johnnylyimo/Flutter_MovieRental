@@ -22,4 +22,10 @@ class Movie {
       _title = newTitle;
     }
   }
+
+  set actor(String newActor) {
+    if (newActor.length <= 255) {
+      _actor = newActor;
+    }
+  }
 }
