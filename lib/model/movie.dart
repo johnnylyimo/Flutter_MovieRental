@@ -42,5 +42,6 @@ class Movie {
     var movieMap = Map<String, dynamic>();
     movieMap['title'] = _title;
     movieMap['description'] = _desc;
+    movieMap['actor'] = _actor;
   }
 }
