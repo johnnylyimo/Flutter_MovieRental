@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'screens/home.dart';
 import 'package:provider/provider.dart';
 import 'package:movierental/model/db_manager.dart';
-import 'screens/add_movie.dart';
 
 void main() {
   runApp(MovieRental());
@@ -20,7 +19,7 @@ class MovieRental extends StatelessWidget {
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
-          home: AddMovie()),
+          home: HomePage()),
     );
   }
 }

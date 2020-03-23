@@ -16,9 +16,9 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     final getDB = Provider.of<DBManager>(context);
 
-    () {
+    () async {
       setState(() async {
-        movies = await getDB.getMovies();
+        movies = await getDB.getMovies() ?? null;
       });
     }();
 
@@ -27,7 +27,9 @@ class _HomePageState extends State<HomePage> {
         centerTitle: true,
         title: Text('Movies Library'),
       ),
-      body: SafeArea(),
+      body: SafeArea(
+        child: Container(),
+      ),
     );
   }
 }
