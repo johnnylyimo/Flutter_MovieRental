@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:movierental/model/movie.dart';
+import 'package:movierental/model/db_manager.dart';
 
 class HomePage extends StatefulWidget {
   @override
