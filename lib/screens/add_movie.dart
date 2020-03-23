@@ -53,7 +53,7 @@ class _AddMovieState extends State<AddMovie> {
                   height: 20.0,
                 ),
                 TextFormField(
-                  controller: titleController,
+                  controller: actorController,
                   decoration: InputDecoration(
                     labelText: 'Movie Actor(s)',
                     border: OutlineInputBorder(
@@ -75,7 +75,7 @@ class _AddMovieState extends State<AddMovie> {
                 ),
                 TextFormField(
                   keyboardType: TextInputType.multiline,
-                  controller: titleController,
+                  controller: descController,
                   decoration: InputDecoration(
                     labelText: 'Movie Description',
                     border: OutlineInputBorder(
@@ -92,6 +92,7 @@ class _AddMovieState extends State<AddMovie> {
                   validator: (val) =>
                       val.isEmpty ? 'Please enter Movie Title' : null,
                 ),
+                SizedBox(),
               ],
             ),
           ),
