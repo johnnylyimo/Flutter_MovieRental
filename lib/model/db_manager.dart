@@ -6,4 +6,7 @@ class DBManager with ChangeNotifier {
   DBManager._internal();
   static final DBManager _dbManager = DBManager._internal();
   factory DBManager() => _dbManager;
+
+  // constant class properties
+  final tblMovie = 'movie';
 }
