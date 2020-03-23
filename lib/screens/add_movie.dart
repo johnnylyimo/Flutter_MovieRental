@@ -114,6 +114,7 @@ class _AddMovieState extends State<AddMovie> {
                   validator: (val) =>
                       val.isEmpty ? 'Please enter Movie released year' : null,
                 ),
+                SizedBox(),
                 RaisedButton(
                   color: Colors.blue,
                   child: Text('Add'),
