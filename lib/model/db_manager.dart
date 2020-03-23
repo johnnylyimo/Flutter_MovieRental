@@ -13,4 +13,5 @@ class DBManager with ChangeNotifier {
   final colTitle = 'title';
   final colDesc = 'description';
   final colActor = 'actor';
+  final colReleasedYear = 'releasedYear';
 }
