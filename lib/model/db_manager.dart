@@ -59,5 +59,6 @@ class DBManager with ChangeNotifier {
   // update movie
   Future<int> updateMovie(Movie movie) async {
     await initializeDB();
+    notifyListeners();
   }
 }
