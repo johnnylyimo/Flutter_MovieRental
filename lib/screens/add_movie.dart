@@ -116,6 +116,7 @@ class _AddMovieState extends State<AddMovie> {
                 ),
                 RaisedButton(
                   color: Colors.blue,
+                  child: Text('Add'),
                 )
               ],
             ),
