@@ -23,7 +23,10 @@ class _AddMovieState extends State<AddMovie> {
         centerTitle: true,
         title: Text('Add new Movie'),
       ),
-      body: SafeArea(child: SingleChildScrollView()),
+      body: SafeArea(
+          child: SingleChildScrollView(
+        child: Form(),
+      )),
     );
   }
 }
