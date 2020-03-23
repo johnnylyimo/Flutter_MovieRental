@@ -13,4 +13,5 @@ class Movie {
   int get id => _id;
   String get title => _title;
   String get actor => _actor;
+  String get description => _desc;
 }
