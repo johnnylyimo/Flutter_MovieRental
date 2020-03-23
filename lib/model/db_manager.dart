@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/foundation.dart';
+import 'package:movierental/model/movie.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 
@@ -29,4 +30,7 @@ class DBManager with ChangeNotifier {
     }
     return db;
   }
+
+  // insert data into DB
+  Future<int> addMovie(Movie movie) async {}
 }
