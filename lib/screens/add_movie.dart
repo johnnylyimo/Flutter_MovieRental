@@ -96,6 +96,7 @@ class _AddMovieState extends State<AddMovie> {
                   height: 20.0,
                 ),
                 TextFormField(
+                  keyboardType: TextInputType.number,
                   controller: descController,
                   decoration: InputDecoration(
                     labelText: 'Movie Release Year',
