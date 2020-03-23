@@ -9,10 +9,17 @@ class Movie {
   // Constructor
   Movie(this._id, this._title, this._actor, this._releasedYear, [this._desc]);
 
-  // getter
+  // getters
   int get id => _id;
   String get title => _title;
   String get actor => _actor;
   String get description => _desc;
   String get releasedYear => _releasedYear;
+
+  // setters
+  set title(String newTitle) {
+    if (newTitle.length <= 255) {
+      _title = newTitle;
+    }
+  }
 }
