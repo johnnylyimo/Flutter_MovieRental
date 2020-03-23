@@ -9,6 +9,7 @@ class _AddMovieState extends State<AddMovie> {
   // capture input from TextField
   var titleController = TextEditingController();
   var actorController = TextEditingController();
+  var descController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
