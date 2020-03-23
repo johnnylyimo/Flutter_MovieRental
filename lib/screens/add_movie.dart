@@ -17,6 +17,7 @@ class _AddMovieState extends State<AddMovie> {
 
   @override
   Widget build(BuildContext context) {
+    final getDB = Provider.of<DBManager>(context);
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
