@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screens/home.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(MovieRental());
