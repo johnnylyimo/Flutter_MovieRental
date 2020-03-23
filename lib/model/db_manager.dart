@@ -9,6 +9,7 @@ class DBManager with ChangeNotifier {
 
   // constant class properties
   final tblMovie = 'movie';
+  final colId = 'id';
   final colTitle = 'title';
   final colDesc = 'description';
   final colActor = 'actor';
