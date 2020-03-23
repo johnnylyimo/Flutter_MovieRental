@@ -36,5 +36,6 @@ class DBManager with ChangeNotifier {
     await initializeDB();
     var newMovie = await db.insert(tblMovie, movie.toMap(),
         conflictAlgorithm: ConflictAlgorithm.replace);
+    notifyListeners();
   }
 }
