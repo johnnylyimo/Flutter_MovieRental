@@ -3,4 +3,5 @@ class Movie {
   int _id;
   String _title;
   String _desc;
+  String releaseYear;
 }
