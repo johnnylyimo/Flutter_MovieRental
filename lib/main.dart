@@ -10,12 +10,14 @@ class MovieRental extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'MovieRental App',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: HomePage());
+    return ChangeNotifierProvider(
+      child: MaterialApp(
+          debugShowCheckedModeBanner: false,
+          title: 'MovieRental App',
+          theme: ThemeData(
+            primarySwatch: Colors.blue,
+          ),
+          home: HomePage()),
+    );
   }
 }
