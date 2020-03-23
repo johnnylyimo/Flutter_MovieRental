@@ -13,6 +13,7 @@ class _HomePageState extends State<HomePage> {
         centerTitle: true,
         title: Text('Movies Library'),
       ),
+      body: SafeArea(),
     );
   }
 }
