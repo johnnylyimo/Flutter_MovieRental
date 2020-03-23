@@ -32,5 +32,7 @@ class DBManager with ChangeNotifier {
   }
 
   // insert data into DB
-  Future<int> addMovie(Movie movie) async {}
+  Future<int> addMovie(Movie movie) async {
+    await initializeDB();
+  }
 }
