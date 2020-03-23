@@ -97,7 +97,9 @@ class _AddMovieState extends State<AddMovie> {
                 ),
                 TextFormField(
                   controller: descController,
-                  decoration: InputDecoration(),
+                  decoration: InputDecoration(
+                    labelText: 'Movie Release Year',
+                  ),
                   validator: (val) =>
                       val.isEmpty ? 'Please enter Movie released year' : null,
                 ),
