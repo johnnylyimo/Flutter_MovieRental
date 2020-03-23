@@ -97,6 +97,8 @@ class _AddMovieState extends State<AddMovie> {
                 ),
                 TextFormField(
                   controller: descController,
+                  validator: (val) =>
+                      val.isEmpty ? 'Please enter Movie Title' : null,
                 ),
               ],
             ),
