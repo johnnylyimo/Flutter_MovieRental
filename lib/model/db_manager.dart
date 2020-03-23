@@ -34,5 +34,7 @@ class DBManager with ChangeNotifier {
   // insert data into DB
   Future<int> addMovie(Movie movie) async {
     await initializeDB();
+    var newMovie = await db.insert(tblMovie, movie.toMap(),
+        conflictAlgorithm: ConflictAlgorithm.replace);
   }
 }
