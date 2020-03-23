@@ -8,6 +8,8 @@ class AddMovie extends StatefulWidget {
 class _AddMovieState extends State<AddMovie> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(),
+    );
   }
 }
