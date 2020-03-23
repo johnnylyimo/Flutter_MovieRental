@@ -10,6 +10,7 @@ class _AddMovieState extends State<AddMovie> {
   var titleController = TextEditingController();
   var actorController = TextEditingController();
   var descController = TextEditingController();
+  var releasedYearController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
