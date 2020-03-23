@@ -8,4 +8,7 @@ class Movie {
 
   // Constructor
   Movie(this._id, this._title, this._actor, this.releaseYear, [this._desc]);
+
+  // getter
+  int get id => _id;
 }
