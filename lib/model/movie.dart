@@ -5,4 +5,7 @@ class Movie {
   String _actor;
   String _desc;
   String releaseYear;
+
+  // Constructor
+  Movie(this._id, this._title, this._actor, this.releaseYear, [this._desc]);
 }
