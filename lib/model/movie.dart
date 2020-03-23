@@ -43,5 +43,6 @@ class Movie {
     movieMap['title'] = _title;
     movieMap['description'] = _desc;
     movieMap['actor'] = _actor;
+    movieMap['releasedYear'] = _releasedYear;
   }
 }
