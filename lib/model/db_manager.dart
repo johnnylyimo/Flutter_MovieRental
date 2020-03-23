@@ -11,4 +11,5 @@ class DBManager with ChangeNotifier {
   final tblMovie = 'movie';
   final colTitle = 'title';
   final colDesc = 'description';
+  final colActor = 'actor';
 }
