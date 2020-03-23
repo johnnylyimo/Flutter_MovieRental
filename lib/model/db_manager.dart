@@ -60,5 +60,7 @@ class DBManager with ChangeNotifier {
   Future<int> updateMovie(Movie movie) async {
     await initializeDB();
     notifyListeners();
+    return await db.update(tblMovie, movie.toMap(),
+        where: "$colId = ?", whereArgs: [movie.id]);
   }
 }
