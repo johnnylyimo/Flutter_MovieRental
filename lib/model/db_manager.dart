@@ -43,5 +43,6 @@ class DBManager with ChangeNotifier {
 
   // retrieve all movies
   Future<List<Movie>> getMovies() async {
+    await initializeDB();
   }
 }
