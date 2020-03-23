@@ -6,6 +6,9 @@ class AddMovie extends StatefulWidget {
 }
 
 class _AddMovieState extends State<AddMovie> {
+  // capture input from TextField
+  var titleController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
