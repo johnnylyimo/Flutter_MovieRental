@@ -44,5 +44,8 @@ class Movie {
     movieMap['description'] = _desc;
     movieMap['actor'] = _actor;
     movieMap['releasedYear'] = _releasedYear;
+    if (_id != null) {
+      movieMap['id'] = _id;
+    }
   }
 }
