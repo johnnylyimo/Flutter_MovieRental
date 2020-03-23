@@ -26,6 +26,7 @@ class _AddMovieState extends State<AddMovie> {
       body: SafeArea(
           child: SingleChildScrollView(
         child: Container(
+          padding: EdgeInsets.only(left: 10.0, right: 10.0, top: 20.0),
           child: Form(
             key: _formKey,
             child: Column(
