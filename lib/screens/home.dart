@@ -8,6 +8,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  List<Movie> movies;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
