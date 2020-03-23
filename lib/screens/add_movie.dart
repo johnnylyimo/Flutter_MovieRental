@@ -27,6 +27,7 @@ class _AddMovieState extends State<AddMovie> {
           child: SingleChildScrollView(
         child: Form(
           key: _formKey,
+          child: Column(),
         ),
       )),
     );
