@@ -70,6 +70,7 @@ class _AddMovieState extends State<AddMovie> {
                   validator: (val) =>
                       val.isEmpty ? 'Please enter Movie Title' : null,
                 ),
+                SizedBox(),
                 TextFormField(
                   keyboardType: TextInputType.multiline,
                   controller: titleController,
