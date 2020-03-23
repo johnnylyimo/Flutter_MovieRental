@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'screens/home.dart';
 import 'package:provider/provider.dart';
+import 'package:movierental/model/db_manager.dart';
 
 void main() {
   runApp(MovieRental());
