@@ -13,7 +13,7 @@ class _AddMovieState extends State<AddMovie> {
   var actorController = TextEditingController();
   var descController = TextEditingController();
   var releasedYearController = TextEditingController();
-  final formKey = GlobalKey<FormState>();
+  final _formKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,9 @@ class _AddMovieState extends State<AddMovie> {
       ),
       body: SafeArea(
           child: SingleChildScrollView(
-        child: Form(),
+        child: Form(
+          key: _formKey,
+        ),
       )),
     );
   }
