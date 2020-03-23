@@ -11,6 +11,7 @@ class _AddMovieState extends State<AddMovie> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
+        title: Text('Add new Movie'),
       ),
     );
   }
