@@ -5,4 +5,5 @@ class DBManager with ChangeNotifier {
   // Transform DBManager to singleton class.
   DBManager._internal();
   static final DBManager _dbManager = DBManager._internal();
+  factory DBManager() => _dbManager;
 }
