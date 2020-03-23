@@ -40,5 +40,6 @@ class Movie {
 
   Map<String, dynamic> toMap() {
     var movieMap = Map<String, dynamic>();
+    movieMap['title'] = _title;
   }
 }
