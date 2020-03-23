@@ -25,47 +25,68 @@ class _AddMovieState extends State<AddMovie> {
       ),
       body: SafeArea(
           child: SingleChildScrollView(
-        child: Form(
-          key: _formKey,
-          child: Column(
-            children: <Widget>[
-              TextFormField(
-                controller: titleController,
-                decoration: InputDecoration(
-                  labelText: 'Movie Title',
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(20.0),
-                  ),
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Colors.blue.shade200,
-                      width: 2.0,
+        child: Container(
+          child: Form(
+            key: _formKey,
+            child: Column(
+              children: <Widget>[
+                TextFormField(
+                  controller: titleController,
+                  decoration: InputDecoration(
+                    labelText: 'Movie Title',
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(20.0),
                     ),
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                ),
-                validator: (val) =>
-                    val.isEmpty ? 'Please enter Movie Title' : null,
-              ),
-              TextFormField(
-                controller: titleController,
-                decoration: InputDecoration(
-                  labelText: 'Movie Actor(s)',
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(20.0),
-                  ),
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Colors.blue.shade200,
-                      width: 2.0,
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Colors.blue.shade200,
+                        width: 2.0,
+                      ),
+                      borderRadius: BorderRadius.circular(20),
                     ),
-                    borderRadius: BorderRadius.circular(20),
                   ),
+                  validator: (val) =>
+                      val.isEmpty ? 'Please enter Movie Title' : null,
                 ),
-                validator: (val) =>
-                    val.isEmpty ? 'Please enter Movie Title' : null,
-              ),
-            ],
+                TextFormField(
+                  controller: titleController,
+                  decoration: InputDecoration(
+                    labelText: 'Movie Actor(s)',
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(20.0),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Colors.blue.shade200,
+                        width: 2.0,
+                      ),
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                  validator: (val) =>
+                      val.isEmpty ? 'Please enter Movie Title' : null,
+                ),
+                TextFormField(
+                  keyboardType: TextInputType.multiline,
+                  controller: titleController,
+                  decoration: InputDecoration(
+                    labelText: 'Movie Description',
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(20.0),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Colors.blue.shade200,
+                        width: 2.0,
+                      ),
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                  validator: (val) =>
+                      val.isEmpty ? 'Please enter Movie Title' : null,
+                ),
+              ],
+            ),
           ),
         ),
       )),
