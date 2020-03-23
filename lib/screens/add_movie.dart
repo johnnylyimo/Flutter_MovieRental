@@ -99,6 +99,9 @@ class _AddMovieState extends State<AddMovie> {
                   controller: descController,
                   decoration: InputDecoration(
                     labelText: 'Movie Release Year',
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(20.0),
+                    ),
                   ),
                   validator: (val) =>
                       val.isEmpty ? 'Please enter Movie released year' : null,
