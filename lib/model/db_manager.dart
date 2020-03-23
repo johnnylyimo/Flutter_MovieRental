@@ -19,5 +19,14 @@ class DBManager with ChangeNotifier {
 
   Database db;
 
-  Future<Database> initializeDB() async {}
+  Future<Database> initializeDB() async {
+    if (db == null) {
+      db = await openDatabase(join(await getDatabasesPath(), "movie.db"),
+          version: 1, onCreate: (db, int version) {
+        return db.execute(
+            "CREATE TABLE $tblMovie($colId INTEGER PRIMARY KEY, $colTitle TEXT, $colDesc TEXT, $colActor TEXT, $colReleasedYear INTEGER)");
+      });
+    }
+    return db;
+  }
 }
