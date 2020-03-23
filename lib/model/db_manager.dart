@@ -4,7 +4,6 @@ import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 import 'dart:async';
 
-
 class DBManager with ChangeNotifier {
   // Transform DBManager to singleton class.
   DBManager._internal();
@@ -45,8 +44,8 @@ class DBManager with ChangeNotifier {
   Future<List<Movie>> getMovies() async {
     await initializeDB();
     final List<Map<String, dynamic>> allMovies =
-    await db.rawQuery("SELECT * FROM $tblMovie ORDER BY $colTitle ASC");
-    return List.generate(allMovies.length, (i){
+        await db.rawQuery("SELECT * FROM $tblMovie ORDER BY $colTitle ASC");
+    return List.generate(allMovies.length, (i) {
       return Movie(
         allMovies[i][colId],
         allMovies[i][colTitle],
@@ -56,4 +55,7 @@ class DBManager with ChangeNotifier {
       );
     });
   }
+
+  // update movie
+  Future<int> updateMovie(Movie movie) async {}
 }
