@@ -29,7 +29,9 @@ class _AddMovieState extends State<AddMovie> {
           key: _formKey,
           child: Column(
             children: <Widget>[
-              TextFormField(),
+              TextFormField(
+                controller: titleController,
+              ),
             ],
           ),
         ),
