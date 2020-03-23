@@ -63,4 +63,7 @@ class DBManager with ChangeNotifier {
     return await db.update(tblMovie, movie.toMap(),
         where: "$colId = ?", whereArgs: [movie.id]);
   }
+
+  // delete movie
+  Future<int> deleteMovie(int id) async {}
 }
