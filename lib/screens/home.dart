@@ -12,6 +12,8 @@ class _HomePageState extends State<HomePage> {
   List<Movie> movies;
   @override
   Widget build(BuildContext context) {
+    final getDB = Provider.of<DBManager>(context);
+
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
