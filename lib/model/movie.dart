@@ -4,14 +4,15 @@ class Movie {
   String _title;
   String _actor;
   String _desc;
-  String releaseYear;
+  String _releasedYear;
 
   // Constructor
-  Movie(this._id, this._title, this._actor, this.releaseYear, [this._desc]);
+  Movie(this._id, this._title, this._actor, this._releasedYear, [this._desc]);
 
   // getter
   int get id => _id;
   String get title => _title;
   String get actor => _actor;
   String get description => _desc;
+  String get releasedYear => _releasedYear;
 }
