@@ -1,8 +1,9 @@
-import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:movierental/model/movie.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
+import 'dart:async';
+
 
 class DBManager with ChangeNotifier {
   // Transform DBManager to singleton class.
@@ -37,5 +38,10 @@ class DBManager with ChangeNotifier {
     var newMovie = await db.insert(tblMovie, movie.toMap(),
         conflictAlgorithm: ConflictAlgorithm.replace);
     notifyListeners();
+    return newMovie;
+  }
+
+  // retrieve all movies
+  Future<List<Movie>> getMovies() async {
   }
 }
