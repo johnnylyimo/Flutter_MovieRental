@@ -51,6 +51,9 @@ class _AddMovieState extends State<AddMovie> {
                 controller: titleController,
                 decoration: InputDecoration(
                   labelText: 'Movie Actor(s)',
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
                 ),
                 validator: (val) =>
                     val.isEmpty ? 'Please enter Movie Title' : null,
