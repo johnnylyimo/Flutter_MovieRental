@@ -46,8 +46,14 @@ class DBManager with ChangeNotifier {
     await initializeDB();
     final List<Map<String, dynamic>> allMovies =
     await db.rawQuery("SELECT * FROM $tblMovie ORDER BY $colTitle ASC");
-
-
-
+    return List.generate(allMovies.length, (i){
+      return Movie(
+        allMovies[i][colId],
+        allMovies[i][colTitle],
+        allMovies[i][colActor],
+        allMovies[i][colReleasedYear],
+        allMovies[i][colDesc],
+      );
+    });
   }
 }
