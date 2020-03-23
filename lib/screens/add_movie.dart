@@ -118,6 +118,7 @@ class _AddMovieState extends State<AddMovie> {
                   color: Colors.blue,
                   child: Text('Add'),
                   shape: StadiumBorder(),
+                  onPressed: () {},
                 )
               ],
             ),
