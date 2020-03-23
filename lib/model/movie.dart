@@ -36,4 +36,5 @@ class Movie {
   }
 
   set releasedYear(int newReleasedYear) => _releasedYear = newReleasedYear;
+  set id(int newId) => _id = newId;
 }
