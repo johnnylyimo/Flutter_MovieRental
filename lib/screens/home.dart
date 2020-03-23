@@ -16,6 +16,12 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     final getDB = Provider.of<DBManager>(context);
 
+    () {
+      setState(() async {
+        movies = await getDB.getMovies();
+      });
+    }();
+
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
