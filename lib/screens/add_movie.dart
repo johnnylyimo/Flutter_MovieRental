@@ -95,6 +95,7 @@ class _AddMovieState extends State<AddMovie> {
                 SizedBox(
                   height: 20.0,
                 ),
+                TextFormField(),
               ],
             ),
           ),
