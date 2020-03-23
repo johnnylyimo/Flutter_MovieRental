@@ -28,4 +28,10 @@ class Movie {
       _actor = newActor;
     }
   }
+
+  set description(String newDescription) {
+    if (newDescription.length <= 255) {
+      _desc = newDescription;
+    }
+  }
 }
