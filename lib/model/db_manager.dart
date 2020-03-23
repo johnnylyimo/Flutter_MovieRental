@@ -44,5 +44,10 @@ class DBManager with ChangeNotifier {
   // retrieve all movies
   Future<List<Movie>> getMovies() async {
     await initializeDB();
+    final List<Map<String, dynamic>> allMovies =
+    await db.rawQuery("SELECT * FROM $tblMovie ORDER BY $colTitle ASC");
+
+
+
   }
 }
