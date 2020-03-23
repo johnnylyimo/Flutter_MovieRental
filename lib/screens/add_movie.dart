@@ -9,7 +9,9 @@ class _AddMovieState extends State<AddMovie> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        centerTitle: true,
+      ),
     );
   }
 }
