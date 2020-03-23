@@ -12,6 +12,7 @@ class MovieRental extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
+      create: (_) => DBManager(),
       child: MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'MovieRental App',
