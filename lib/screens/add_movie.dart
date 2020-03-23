@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movierental/model/db_manager.dart';
 
 class AddMovie extends StatefulWidget {
   @override
