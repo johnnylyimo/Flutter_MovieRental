@@ -17,4 +17,6 @@ class DBManager with ChangeNotifier {
   final colReleasedYear = 'releasedYear';
 
   Database db;
+
+  Future<Database> initializeDB() async {}
 }
