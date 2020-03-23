@@ -38,5 +38,7 @@ class Movie {
   set releasedYear(int newReleasedYear) => _releasedYear = newReleasedYear;
   set id(int newId) => _id = newId;
 
-  Map<String, dynamic> toMap() {}
+  Map<String, dynamic> toMap() {
+    var movieMap = Map<String, dynamic>();
+  }
 }
