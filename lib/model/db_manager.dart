@@ -68,5 +68,6 @@ class DBManager with ChangeNotifier {
   Future<int> deleteMovie(int id) async {
     await initializeDB();
     notifyListeners();
+    return await db.delete(tblMovie, where: "$colId = ?", whereArgs: [id]);
   }
 }
