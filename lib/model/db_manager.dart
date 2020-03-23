@@ -65,5 +65,7 @@ class DBManager with ChangeNotifier {
   }
 
   // delete movie
-  Future<int> deleteMovie(int id) async {}
+  Future<int> deleteMovie(int id) async {
+    await initializeDB();
+  }
 }
