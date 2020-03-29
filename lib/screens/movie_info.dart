@@ -24,7 +24,7 @@ class _MovieInfoState extends State<MovieInfo> {
   Widget build(BuildContext context) {
     // filled values to Form input field
     titleController.text = widget.movie.title;
-    actorController.text = widget.movie.title;
+    actorController.text = widget.movie.actor;
 
     return Scaffold(
       appBar: AppBar(
@@ -57,6 +57,7 @@ class _MovieInfoState extends State<MovieInfo> {
                     validator: (val) =>
                         val.isEmpty ? 'Please enter Movie Title' : null,
                   ),
+                  TextFormField(),
                 ],
               ),
             ),
