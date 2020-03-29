@@ -79,7 +79,9 @@ class _MovieInfoState extends State<MovieInfo> {
                     validator: (val) =>
                         val.isEmpty ? 'Please enter Movie Actor(s)' : null,
                   ),
-                  SizedBox(),
+                  SizedBox(
+                    height: 20.0,
+                  ),
                 ],
               ),
             ),
