@@ -31,7 +31,9 @@ class _HomePageState extends State<HomePage> {
       body: SafeArea(
         child: Container(),
       ),
-      floatingActionButton: FloatingActionButton(),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+      ),
     );
   }
 }
