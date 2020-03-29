@@ -87,6 +87,9 @@ class _MovieInfoState extends State<MovieInfo> {
                     controller: descController,
                     decoration: InputDecoration(
                       labelText: 'Movie Description',
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20.0),
+                      ),
                     ),
                   ),
                 ],
