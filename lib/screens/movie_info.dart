@@ -41,6 +41,7 @@ class _MovieInfoState extends State<MovieInfo> {
               key: _formKey,
               child: Column(
                 children: <Widget>[
+                  SizedBox(),
                   TextFormField(
                     controller: titleController,
                     decoration: InputDecoration(
