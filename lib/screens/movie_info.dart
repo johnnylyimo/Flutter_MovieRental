@@ -125,7 +125,9 @@ class _MovieInfoState extends State<MovieInfo> {
                     validator: (val) =>
                         val.isEmpty ? 'Please enter Movie released year' : null,
                   ),
-                  SizedBox(),
+                  SizedBox(
+                    height: 30.0,
+                  ),
                 ],
               ),
             ),
