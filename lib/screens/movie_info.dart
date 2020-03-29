@@ -64,7 +64,12 @@ class _MovieInfoState extends State<MovieInfo> {
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20.0),
                       ),
-                      enabledBorder: OutlineInputBorder(),
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Colors.blue.shade200,
+                          width: 2.0,
+                        ),
+                      ),
                     ),
                     validator: (val) =>
                         val.isEmpty ? 'Please enter Movie Actor(s)' : null,
