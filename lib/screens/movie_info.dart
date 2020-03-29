@@ -158,6 +158,7 @@ class _MovieInfoState extends State<MovieInfo> {
                           'Delete',
                           style: TextStyle(color: Colors.white),
                         ),
+                        shape: StadiumBorder(),
                       ),
                     ],
                   )
