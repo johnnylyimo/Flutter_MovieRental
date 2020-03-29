@@ -34,7 +34,9 @@ class _HomePageState extends State<HomePage> {
           child: ListView.builder(
             itemCount: movies.length ?? 0,
             itemBuilder: (context, index) {
-              return ListTile();
+              return ListTile(
+                title: Text(movies[index].title),
+              );
             },
           ),
         ),
