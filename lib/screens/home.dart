@@ -37,6 +37,7 @@ class _HomePageState extends State<HomePage> {
               return ListTile(
                 leading: Icon(Icons.movie),
                 title: Text(movies[index].title),
+                subtitle: Text((movies[index].actor)),
               );
             },
           ),
