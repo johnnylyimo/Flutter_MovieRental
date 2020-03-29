@@ -34,10 +34,13 @@ class _HomePageState extends State<HomePage> {
           child: ListView.builder(
             itemCount: movies.length ?? 0,
             itemBuilder: (context, index) {
-              return ListTile(
-                leading: Icon(Icons.movie),
-                title: Text(movies[index].title),
-                subtitle: Text((movies[index].actor)),
+              return Card(
+                child: ListTile(
+                  leading: Icon(Icons.movie),
+                  title: Text(movies[index].title),
+                  subtitle: Text((movies[index].actor)),
+                  trailing: Text((movies[index].releasedYear.toString())),
+                ),
               );
             },
           ),
