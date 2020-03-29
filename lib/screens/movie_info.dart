@@ -28,7 +28,9 @@ class _MovieInfoState extends State<MovieInfo> {
         title: Text(widget.movie.title),
       ),
       body: SafeArea(
-        child: SingleChildScrollView(),
+        child: SingleChildScrollView(
+          child: Form(),
+        ),
       ),
     );
   }
