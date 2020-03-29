@@ -12,6 +12,7 @@ class MovieInfo extends StatefulWidget {
 
 class _MovieInfoState extends State<MovieInfo> {
   final DBManager getDB = DBManager();
+  Movie movie;
 
   // capture input from TextField
   var titleController = TextEditingController();
@@ -132,16 +133,10 @@ class _MovieInfoState extends State<MovieInfo> {
                     children: <Widget>[
                       RaisedButton(
                         color: Colors.blue,
-                        child: Text('Add'),
+                        child: Text('Update'),
                         shape: StadiumBorder(),
                         onPressed: () {
-                          if (_formKey.currentState.validate()) {
-                            Movie newMovie = Movie(
-                                titleController.text,
-                                actorController.text,
-                                int.parse(releasedYearController.text),
-                                descController.text ?? "");
-                          }
+                          if (_formKey.currentState.validate()) {}
                         },
                       )
                     ],
