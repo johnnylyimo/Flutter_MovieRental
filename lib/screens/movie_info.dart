@@ -104,6 +104,7 @@ class _MovieInfoState extends State<MovieInfo> {
                     height: 20.0,
                   ),
                   TextFormField(
+                    keyboardType: TextInputType.number,
                     validator: (val) =>
                         val.isEmpty ? 'Please enter Movie released year' : null,
                   ),
