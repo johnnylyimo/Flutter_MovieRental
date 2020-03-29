@@ -12,7 +12,6 @@ class MovieInfo extends StatefulWidget {
 
 class _MovieInfoState extends State<MovieInfo> {
   final DBManager getDB = DBManager();
-  Movie movie;
 
   // capture input from TextField
   var titleController = TextEditingController();
@@ -23,6 +22,7 @@ class _MovieInfoState extends State<MovieInfo> {
 
   @override
   Widget build(BuildContext context) {
+    Movie movie = widget.movie;
     // filled values to Form input field
     titleController.text = widget.movie.title;
     actorController.text = widget.movie.actor;
@@ -136,7 +136,9 @@ class _MovieInfoState extends State<MovieInfo> {
                         child: Text('Update'),
                         shape: StadiumBorder(),
                         onPressed: () {
-                          if (_formKey.currentState.validate()) {}
+                          if (_formKey.currentState.validate()) {
+                            movie.title = titleController.text;
+                          }
                         },
                       )
                     ],
