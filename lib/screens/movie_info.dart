@@ -32,6 +32,7 @@ class _MovieInfoState extends State<MovieInfo> {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
+            padding: EdgeInsets.all(10.0),
             child: Form(
               key: _formKey,
               child: Column(
