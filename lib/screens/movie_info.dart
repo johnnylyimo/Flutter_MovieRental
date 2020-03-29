@@ -57,6 +57,7 @@ class _MovieInfoState extends State<MovieInfo> {
                     validator: (val) =>
                         val.isEmpty ? 'Please enter Movie Title' : null,
                   ),
+                  SizedBox(),
                   TextFormField(
                     controller: actorController,
                     decoration: InputDecoration(
