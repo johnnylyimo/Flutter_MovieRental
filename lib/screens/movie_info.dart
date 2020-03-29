@@ -31,7 +31,11 @@ class _MovieInfoState extends State<MovieInfo> {
         child: SingleChildScrollView(
           child: Form(
             key: _formKey,
-            child: Column(),
+            child: Column(
+              children: <Widget>[
+                TextFormField(),
+              ],
+            ),
           ),
         ),
       ),
