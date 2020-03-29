@@ -126,7 +126,11 @@ class _AddMovieState extends State<AddMovie> {
                   shape: StadiumBorder(),
                   onPressed: () {
                     if (_formKey.currentState.validate()) {
-                      Movie newMovie;
+                      Movie newMovie = Movie(
+                          titleController.text,
+                          actorController.text,
+                          int.parse(releasedYearController.text),
+                          descController.text ?? "");
                     }
                   },
                 )
