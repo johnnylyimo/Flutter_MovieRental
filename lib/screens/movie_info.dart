@@ -111,6 +111,7 @@ class _MovieInfoState extends State<MovieInfo> {
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20.0),
                       ),
+                      enabledBorder: OutlineInputBorder(),
                     ),
                     validator: (val) =>
                         val.isEmpty ? 'Please enter Movie released year' : null,
