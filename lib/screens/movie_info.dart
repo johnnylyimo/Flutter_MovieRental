@@ -82,7 +82,9 @@ class _MovieInfoState extends State<MovieInfo> {
                   SizedBox(
                     height: 20.0,
                   ),
-                  TextFormField(),
+                  TextFormField(
+                    keyboardType: TextInputType.multiline,
+                  ),
                 ],
               ),
             ),
