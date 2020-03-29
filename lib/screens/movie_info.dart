@@ -144,6 +144,7 @@ class _MovieInfoState extends State<MovieInfo> {
                                 int.parse(releasedYearController.text);
 
                             getDB.updateMovie(movie);
+                            Navigator.pop(context);
                           }
                         },
                       )
