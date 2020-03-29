@@ -4,6 +4,7 @@ import 'package:movierental/model/movie.dart';
 import 'package:movierental/model/db_manager.dart';
 import 'dart:async';
 import 'package:movierental/screens/add_movie.dart';
+import 'package:movierental/screens/movie_info.dart';
 
 class HomePage extends StatefulWidget {
   @override
