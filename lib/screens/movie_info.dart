@@ -139,6 +139,7 @@ class _MovieInfoState extends State<MovieInfo> {
                           if (_formKey.currentState.validate()) {
                             movie.title = titleController.text;
                             movie.actor = actorController.text;
+                            movie.description = descController.text ?? '';
                           }
                         },
                       )
