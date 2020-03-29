@@ -132,6 +132,7 @@ class _MovieInfoState extends State<MovieInfo> {
                     children: <Widget>[
                       RaisedButton(
                         color: Colors.blue,
+                        child: Text('Add'),
                       )
                     ],
                   )
