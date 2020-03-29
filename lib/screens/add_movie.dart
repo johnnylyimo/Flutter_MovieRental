@@ -9,6 +9,7 @@ class AddMovie extends StatefulWidget {
 
 class _AddMovieState extends State<AddMovie> {
   final DBManager getDB = DBManager();
+
   // capture input from TextField
   var titleController = TextEditingController();
   var actorController = TextEditingController();
@@ -122,7 +123,9 @@ class _AddMovieState extends State<AddMovie> {
                   color: Colors.blue,
                   child: Text('Add'),
                   shape: StadiumBorder(),
-                  onPressed: () {},
+                  onPressed: () {
+                    if (_formKey.currentState.validate()) {}
+                  },
                 )
               ],
             ),
