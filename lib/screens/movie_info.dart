@@ -154,6 +154,7 @@ class _MovieInfoState extends State<MovieInfo> {
                       ),
                       RaisedButton(
                         color: Colors.red,
+                        child: Text('Delete'),
                       ),
                     ],
                   )
