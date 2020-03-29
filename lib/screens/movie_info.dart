@@ -84,6 +84,7 @@ class _MovieInfoState extends State<MovieInfo> {
                   ),
                   TextFormField(
                     keyboardType: TextInputType.multiline,
+                    controller: descController,
                   ),
                 ],
               ),
