@@ -71,7 +71,7 @@ class _AddMovieState extends State<AddMovie> {
                     ),
                   ),
                   validator: (val) =>
-                      val.isEmpty ? 'Please enter Movie Title' : null,
+                      val.isEmpty ? 'Please enter Movie Actor(s)' : null,
                 ),
                 SizedBox(
                   height: 20.0,
@@ -92,8 +92,6 @@ class _AddMovieState extends State<AddMovie> {
                       borderRadius: BorderRadius.circular(20),
                     ),
                   ),
-                  validator: (val) =>
-                      val.isEmpty ? 'Please enter Movie Title' : null,
                 ),
                 SizedBox(
                   height: 20.0,
@@ -131,6 +129,14 @@ class _AddMovieState extends State<AddMovie> {
                           actorController.text,
                           int.parse(releasedYearController.text),
                           descController.text ?? "");
+
+                      getDB.addMovie(newMovie).then((i) {
+                        titleController.clear();
+                        actorController.clear();
+                        releasedYearController.clear();
+                        descController.clear();
+                        newMovie = null;
+                      });
                     }
                   },
                 )
