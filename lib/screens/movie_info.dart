@@ -130,6 +130,7 @@ class _MovieInfoState extends State<MovieInfo> {
                     height: 30.0,
                   ),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       RaisedButton(
                         color: Colors.blue,
