@@ -147,7 +147,10 @@ class _MovieInfoState extends State<MovieInfo> {
                             Navigator.pop(context);
                           }
                         },
-                      )
+                      ),
+                      SizedBox(
+                        width: 30.0,
+                      ),
                     ],
                   )
                 ],
