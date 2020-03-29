@@ -152,6 +152,7 @@ class _MovieInfoState extends State<MovieInfo> {
                       SizedBox(
                         width: 30.0,
                       ),
+                      RaisedButton(),
                     ],
                   )
                 ],
