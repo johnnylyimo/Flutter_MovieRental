@@ -35,6 +35,7 @@ class _HomePageState extends State<HomePage> {
             itemCount: movies.length ?? 0,
             itemBuilder: (context, index) {
               return Card(
+                elevation: 6.0,
                 shape: StadiumBorder(),
                 child: ListTile(
                   leading: Icon(Icons.movie),
