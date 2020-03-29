@@ -8,6 +8,7 @@ class AddMovie extends StatefulWidget {
 }
 
 class _AddMovieState extends State<AddMovie> {
+  final DBManager getDB = DBManager();
   // capture input from TextField
   var titleController = TextEditingController();
   var actorController = TextEditingController();
