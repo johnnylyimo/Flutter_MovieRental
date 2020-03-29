@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:movierental/model/movie.dart';
 import 'package:movierental/model/db_manager.dart';
+import 'package:movierental/model/movie.dart';
 
 class MovieInfo extends StatefulWidget {
   final Movie movie;
@@ -24,6 +24,8 @@ class _MovieInfoState extends State<MovieInfo> {
   Widget build(BuildContext context) {
     // filled values to Form input field
     titleController.text = widget.movie.title;
+    actorController.text = widget.movie.title;
+
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
