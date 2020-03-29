@@ -17,8 +17,9 @@ class _HomePageState extends State<HomePage> {
     final getDB = Provider.of<DBManager>(context);
 
     () async {
-      setState(() async {
-        movies = await getDB.getMovies() ?? null;
+      List moviesList = await getDB.getMovies() ?? [];
+      setState(() {
+        movies = moviesList;
       });
     }();
 
