@@ -7,7 +7,9 @@ class Movie {
   int _releasedYear;
 
   // Constructor
-  Movie(this._id, this._title, this._actor, this._releasedYear, [this._desc]);
+  Movie(this._title, this._actor, this._releasedYear, [this._desc]);
+  Movie.withId(this._id, this._title, this._actor, this._releasedYear,
+      [this._desc]);
 
   // getters
   int get id => _id;
