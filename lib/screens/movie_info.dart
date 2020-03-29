@@ -18,6 +18,7 @@ class _MovieInfoState extends State<MovieInfo> {
   var actorController = TextEditingController();
   var descController = TextEditingController();
   var releasedYearController = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
