@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:movierental/model/db_manager.dart';
-import 'package:provider/provider.dart';
 import 'package:movierental/model/movie.dart';
+import 'package:provider/provider.dart';
 
 class AddMovie extends StatefulWidget {
   @override
@@ -120,7 +120,10 @@ class _AddMovieState extends State<AddMovie> {
                 ),
                 RaisedButton(
                   color: Colors.blue,
-                  child: Text('Add'),
+                  child: Text(
+                    'Add',
+                    style: TextStyle(color: Colors.white),
+                  ),
                   shape: StadiumBorder(),
                   onPressed: () {
                     if (_formKey.currentState.validate()) {
