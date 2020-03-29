@@ -11,6 +11,8 @@ class MovieInfo extends StatefulWidget {
 }
 
 class _MovieInfoState extends State<MovieInfo> {
+  final DBManager getDB = DBManager();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
