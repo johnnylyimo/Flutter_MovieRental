@@ -29,7 +29,9 @@ class _MovieInfoState extends State<MovieInfo> {
       ),
       body: SafeArea(
         child: SingleChildScrollView(
-          child: Form(),
+          child: Form(
+            child: Column(),
+          ),
         ),
       ),
     );
