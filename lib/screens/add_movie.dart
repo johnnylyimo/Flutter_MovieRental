@@ -125,7 +125,9 @@ class _AddMovieState extends State<AddMovie> {
                   child: Text('Add'),
                   shape: StadiumBorder(),
                   onPressed: () {
-                    if (_formKey.currentState.validate()) {}
+                    if (_formKey.currentState.validate()) {
+                      Movie newMovie;
+                    }
                   },
                 )
               ],
