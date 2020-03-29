@@ -13,6 +13,9 @@ class MovieInfo extends StatefulWidget {
 class _MovieInfoState extends State<MovieInfo> {
   final DBManager getDB = DBManager();
 
+  // capture input from TextField
+  var titleController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
