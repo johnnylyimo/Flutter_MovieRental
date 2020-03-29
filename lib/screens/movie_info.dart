@@ -23,7 +23,9 @@ class _MovieInfoState extends State<MovieInfo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text(widget.movie.title),
+      ),
     );
   }
 }
