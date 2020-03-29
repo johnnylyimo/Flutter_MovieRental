@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:movierental/model/movie.dart';
 import 'package:movierental/model/db_manager.dart';
 import 'dart:async';
+import 'package:movierental/screens/add_movie.dart';
 
 class HomePage extends StatefulWidget {
   @override
