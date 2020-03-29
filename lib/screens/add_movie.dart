@@ -137,6 +137,7 @@ class _AddMovieState extends State<AddMovie> {
                         descController.clear();
                         newMovie = null;
                       });
+                      Navigator.pop(context);
                     }
                   },
                 )
