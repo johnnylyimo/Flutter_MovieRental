@@ -133,6 +133,7 @@ class _MovieInfoState extends State<MovieInfo> {
                       RaisedButton(
                         color: Colors.blue,
                         child: Text('Add'),
+                        shape: StadiumBorder(),
                       )
                     ],
                   )
