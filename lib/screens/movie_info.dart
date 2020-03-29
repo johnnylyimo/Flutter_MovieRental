@@ -27,6 +27,7 @@ class _MovieInfoState extends State<MovieInfo> {
         centerTitle: true,
         title: Text(widget.movie.title),
       ),
+      body: SafeArea(),
     );
   }
 }
