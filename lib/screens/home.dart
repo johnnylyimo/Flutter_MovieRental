@@ -31,7 +31,9 @@ class _HomePageState extends State<HomePage> {
       ),
       body: SafeArea(
         child: Container(
-          child: ListView.builder(),
+          child: ListView.builder(
+            itemCount: movies.length,
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
