@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movierental/model/movie.dart';
+import 'package:movierental/model/db_manager.dart';
 
 class MovieInfo extends StatefulWidget {
   final Movie movie;
