@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movierental/model/movie.dart';
 
 class MovieInfo extends StatefulWidget {
   @override
