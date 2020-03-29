@@ -25,6 +25,7 @@ class _MovieInfoState extends State<MovieInfo> {
     // filled values to Form input field
     titleController.text = widget.movie.title;
     actorController.text = widget.movie.actor;
+    descController.text = widget.movie.description;
 
     return Scaffold(
       appBar: AppBar(
