@@ -142,6 +142,8 @@ class _MovieInfoState extends State<MovieInfo> {
                             movie.description = descController.text ?? '';
                             movie.releasedYear =
                                 int.parse(releasedYearController.text);
+
+                            getDB.updateMovie(movie);
                           }
                         },
                       )
