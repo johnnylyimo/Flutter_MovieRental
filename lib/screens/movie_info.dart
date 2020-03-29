@@ -103,7 +103,10 @@ class _MovieInfoState extends State<MovieInfo> {
                   SizedBox(
                     height: 20.0,
                   ),
-                  TextFormField(),
+                  TextFormField(
+                    validator: (val) =>
+                        val.isEmpty ? 'Please enter Movie released year' : null,
+                  ),
                 ],
               ),
             ),
