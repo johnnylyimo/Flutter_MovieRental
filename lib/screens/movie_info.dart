@@ -22,6 +22,8 @@ class _MovieInfoState extends State<MovieInfo> {
 
   @override
   Widget build(BuildContext context) {
+    // filled values to Form input field
+    titleController.text = widget.movie.title;
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
