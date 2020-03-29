@@ -99,6 +99,7 @@ class _MovieInfoState extends State<MovieInfo> {
                       ),
                     ),
                   ),
+                  SizedBox(),
                 ],
               ),
             ),
