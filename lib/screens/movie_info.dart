@@ -33,7 +33,9 @@ class _MovieInfoState extends State<MovieInfo> {
             key: _formKey,
             child: Column(
               children: <Widget>[
-                TextFormField(),
+                TextFormField(
+                  controller: titleController,
+                ),
               ],
             ),
           ),
