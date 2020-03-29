@@ -26,6 +26,7 @@ class _MovieInfoState extends State<MovieInfo> {
     titleController.text = widget.movie.title;
     actorController.text = widget.movie.actor;
     descController.text = widget.movie.description;
+    releasedYearController.text = widget.movie.releasedYear.toString();
 
     return Scaffold(
       appBar: AppBar(
