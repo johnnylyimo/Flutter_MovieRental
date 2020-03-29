@@ -35,6 +35,7 @@ class _MovieInfoState extends State<MovieInfo> {
               children: <Widget>[
                 TextFormField(
                   controller: titleController,
+                  decoration: InputDecoration(),
                   validator: (val) =>
                       val.isEmpty ? 'Please enter Movie Title' : null,
                 ),
