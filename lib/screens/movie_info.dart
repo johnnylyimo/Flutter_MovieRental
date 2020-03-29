@@ -134,7 +134,10 @@ class _MovieInfoState extends State<MovieInfo> {
                     children: <Widget>[
                       RaisedButton(
                         color: Colors.blue,
-                        child: Text('Update'),
+                        child: Text(
+                          'Update',
+                          style: TextStyle(color: Colors.white),
+                        ),
                         shape: StadiumBorder(),
                         onPressed: () {
                           if (_formKey.currentState.validate()) {
