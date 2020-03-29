@@ -24,6 +24,7 @@ class _MovieInfoState extends State<MovieInfo> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Text(widget.movie.title),
       ),
     );
