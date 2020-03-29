@@ -8,6 +8,8 @@ class MovieInfo extends StatefulWidget {
 class _MovieInfoState extends State<MovieInfo> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(),
+    );
   }
 }
