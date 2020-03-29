@@ -31,29 +31,31 @@ class _MovieInfoState extends State<MovieInfo> {
       ),
       body: SafeArea(
         child: SingleChildScrollView(
-          child: Form(
-            key: _formKey,
-            child: Column(
-              children: <Widget>[
-                TextFormField(
-                  controller: titleController,
-                  decoration: InputDecoration(
-                    labelText: 'Movie Title',
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(20.0),
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
-                        color: Colors.blue.shade200,
-                        width: 2.0,
+          child: Padding(
+            child: Form(
+              key: _formKey,
+              child: Column(
+                children: <Widget>[
+                  TextFormField(
+                    controller: titleController,
+                    decoration: InputDecoration(
+                      labelText: 'Movie Title',
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20.0),
                       ),
-                      borderRadius: BorderRadius.circular(20),
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Colors.blue.shade200,
+                          width: 2.0,
+                        ),
+                        borderRadius: BorderRadius.circular(20),
+                      ),
                     ),
+                    validator: (val) =>
+                        val.isEmpty ? 'Please enter Movie Title' : null,
                   ),
-                  validator: (val) =>
-                      val.isEmpty ? 'Please enter Movie Title' : null,
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ),
