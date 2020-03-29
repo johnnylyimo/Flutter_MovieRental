@@ -116,6 +116,7 @@ class _MovieInfoState extends State<MovieInfo> {
                           color: Colors.blue.shade200,
                           width: 2.0,
                         ),
+                        borderRadius: BorderRadius.circular(20),
                       ),
                     ),
                     validator: (val) =>
