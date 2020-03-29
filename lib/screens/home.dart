@@ -43,6 +43,13 @@ class _HomePageState extends State<HomePage> {
                   title: Text(movies[index].title),
                   subtitle: Text((movies[index].actor)),
                   trailing: Text((movies[index].releasedYear.toString())),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => MovieInfo(movies[index])),
+                    );
+                  },
                 ),
               );
             },
