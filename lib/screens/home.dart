@@ -30,7 +30,9 @@ class _HomePageState extends State<HomePage> {
         title: Text('Movies Library'),
       ),
       body: SafeArea(
-        child: Container(),
+        child: Container(
+          child: ListView.builder(),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
