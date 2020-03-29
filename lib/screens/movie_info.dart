@@ -140,6 +140,8 @@ class _MovieInfoState extends State<MovieInfo> {
                             movie.title = titleController.text;
                             movie.actor = actorController.text;
                             movie.description = descController.text ?? '';
+                            movie.releasedYear =
+                                int.parse(releasedYearController.text);
                           }
                         },
                       )
