@@ -163,7 +163,9 @@ class _MovieInfoState extends State<MovieInfo> {
                         ),
                         shape: StadiumBorder(),
                         onPressed: () {
-                          showDialog()
+                          showDialog(
+                            context: context,
+                          )
                         },
                       ),
                     ],
