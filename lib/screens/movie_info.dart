@@ -178,7 +178,9 @@ class _MovieInfoState extends State<MovieInfo> {
                                   ),
                                   backgroundColor: Colors.red,
                                   elevation: 8.0,
-                                  shape: RoundedRectangleBorder(),
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(30.0),
+                                  ),
                                 );
                               });
                         },
