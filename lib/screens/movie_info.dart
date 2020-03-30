@@ -191,6 +191,7 @@ class _MovieInfoState extends State<MovieInfo> {
                                         style: TextStyle(
                                             fontSize: 18.0,
                                             letterSpacing: 1.0,
+                                            fontWeight: FontWeight.bold),
                                       ),
                                     ),
                                   ],
