@@ -172,6 +172,8 @@ class _MovieInfoState extends State<MovieInfo> {
                                     'Delete a Movie!',
                                     textAlign: TextAlign.center,
                                   ),
+                                  content: Text(
+                                      'Do you want to Delete\n${titleController.text}'),
                                 );
                               });
                         },
