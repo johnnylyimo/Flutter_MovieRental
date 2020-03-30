@@ -176,6 +176,7 @@ class _MovieInfoState extends State<MovieInfo> {
                                     'Do you want to Delete\n${titleController.text}',
                                     textAlign: TextAlign.center,
                                   ),
+                                  backgroundColor: Colors.red,
                                 );
                               });
                         },
