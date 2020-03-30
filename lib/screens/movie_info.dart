@@ -195,6 +195,8 @@ class _MovieInfoState extends State<MovieInfo> {
                                       ),
                                       onPressed: () async {
                                         await getDB.deleteMovie(movie.id);
+                                        Navigator.pop(context);
+                                        Navigator.pop(context);
                                       },
                                     ),
                                   ],
