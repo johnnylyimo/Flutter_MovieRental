@@ -182,7 +182,10 @@ class _MovieInfoState extends State<MovieInfo> {
                                     borderRadius: BorderRadius.circular(30.0),
                                   ),
                                   actions: <Widget>[
-                                    OutlineButton(),
+                                    OutlineButton(
+                                      borderSide:
+                                          BorderSide(color: Colors.blue),
+                                    ),
                                   ],
                                 );
                               });
