@@ -188,6 +188,9 @@ class _MovieInfoState extends State<MovieInfo> {
                                       shape: StadiumBorder(),
                                       child: Text(
                                         'Yes',
+                                        style: TextStyle(
+                                            fontSize: 18.0,
+
                                       ),
                                     ),
                                   ],
