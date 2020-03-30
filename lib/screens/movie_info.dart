@@ -165,6 +165,7 @@ class _MovieInfoState extends State<MovieInfo> {
                         onPressed: () {
                           showDialog(
                             context: context,
+                            barrierDismissible: true,
                           )
                         },
                       ),
