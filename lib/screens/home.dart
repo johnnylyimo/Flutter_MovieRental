@@ -51,6 +51,7 @@ class _HomePageState extends State<HomePage> {
             future: getDB.getMovies(),
             builder: (context, snapshot) {
               if (snapshot.hasData) {
+                movies = snapshot.data;
                 return ListView.builder(
                   itemCount: movies.length ?? 0,
                   itemBuilder: (context, index) {
