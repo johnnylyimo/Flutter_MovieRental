@@ -177,6 +177,7 @@ class _MovieInfoState extends State<MovieInfo> {
                                     textAlign: TextAlign.center,
                                   ),
                                   backgroundColor: Colors.red,
+                                  elevation: 8.0,
                                 );
                               });
                         },
