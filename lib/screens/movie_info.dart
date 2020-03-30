@@ -190,7 +190,7 @@ class _MovieInfoState extends State<MovieInfo> {
                                         'Yes',
                                         style: TextStyle(
                                             fontSize: 18.0,
-
+                                            letterSpacing: 1.0,
                                       ),
                                     ),
                                   ],
