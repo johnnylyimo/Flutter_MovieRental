@@ -185,6 +185,7 @@ class _MovieInfoState extends State<MovieInfo> {
                                     OutlineButton(
                                       borderSide:
                                           BorderSide(color: Colors.blue),
+                                      shape: StadiumBorder(),
                                     ),
                                   ],
                                 );
