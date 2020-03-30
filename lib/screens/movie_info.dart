@@ -167,7 +167,9 @@ class _MovieInfoState extends State<MovieInfo> {
                             context: context,
                             barrierDismissible: true,
                             builder: (context){
-                              return AlertDialog()
+                              return AlertDialog(
+                                title: Text('Delete a Movie!'),
+                              );
                             }
                           )
                         },
