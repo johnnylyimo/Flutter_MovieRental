@@ -181,6 +181,9 @@ class _MovieInfoState extends State<MovieInfo> {
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(30.0),
                                   ),
+                                  actions: <Widget>[
+                                    OutlineButton(),
+                                  ],
                                 );
                               });
                         },
