@@ -166,6 +166,9 @@ class _MovieInfoState extends State<MovieInfo> {
                           showDialog(
                             context: context,
                             barrierDismissible: true,
+                            builder: (context){
+                              return AlertDialog()
+                            }
                           )
                         },
                       ),
