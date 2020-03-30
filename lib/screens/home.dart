@@ -49,6 +49,7 @@ class _HomePageState extends State<HomePage> {
       body: SafeArea(
         child: Container(
           child: FutureBuilder(
+            future: getDB.getMovies(),
             return ListView.builder(
               itemCount: movies.length ?? 0,
               itemBuilder: (context, index) {
