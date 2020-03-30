@@ -186,6 +186,9 @@ class _MovieInfoState extends State<MovieInfo> {
                                       borderSide:
                                           BorderSide(color: Colors.blue),
                                       shape: StadiumBorder(),
+                                      child: Text(
+                                        'Yes',
+                                      ),
                                     ),
                                   ],
                                 );
