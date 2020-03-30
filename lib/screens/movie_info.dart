@@ -193,6 +193,9 @@ class _MovieInfoState extends State<MovieInfo> {
                                             letterSpacing: 1.0,
                                             fontWeight: FontWeight.bold),
                                       ),
+                                      onPressed: () async {
+                                        await getDB.deleteMovie(movie.id);
+                                      },
                                     ),
                                   ],
                                 );
