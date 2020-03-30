@@ -173,11 +173,12 @@ class _MovieInfoState extends State<MovieInfo> {
                                     textAlign: TextAlign.center,
                                   ),
                                   content: Text(
-                                    'Do you want to Delete\n${titleController.text}',
+                                    'Do you want to Delete\n${titleController.text} ?',
                                     textAlign: TextAlign.center,
                                   ),
                                   backgroundColor: Colors.red,
                                   elevation: 8.0,
+                                  shape: RoundedRectangleBorder(),
                                 );
                               });
                         },
