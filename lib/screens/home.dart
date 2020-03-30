@@ -13,6 +13,22 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   List<Movie> movies;
+//  DBManager getDB;
+//  List moviesList;
+//
+//  getMovies() async {
+//    moviesList = await getDB.getMovies() ?? [];
+//    setState(() {
+//      movies = moviesList;
+//    });
+//  }
+//
+//  @override
+//  void initState() {
+//    // TODO: implement initState
+//    super.initState();
+//    getMovies();
+//  }
 
   @override
   Widget build(BuildContext context) {
@@ -32,27 +48,29 @@ class _HomePageState extends State<HomePage> {
       ),
       body: SafeArea(
         child: Container(
-          child: ListView.builder(
-            itemCount: movies.length ?? 0,
-            itemBuilder: (context, index) {
-              return Card(
-                elevation: 6.0,
-                shape: StadiumBorder(),
-                child: ListTile(
-                  leading: Icon(Icons.movie),
-                  title: Text(movies[index].title),
-                  subtitle: Text((movies[index].actor)),
-                  trailing: Text((movies[index].releasedYear.toString())),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => MovieInfo(movies[index])),
-                    );
-                  },
-                ),
-              );
-            },
+          child: FutureBuilder(
+            return ListView.builder(
+              itemCount: movies.length ?? 0,
+              itemBuilder: (context, index) {
+                return Card(
+                  elevation: 6.0,
+                  shape: StadiumBorder(),
+                  child: ListTile(
+                    leading: Icon(Icons.movie),
+                    title: Text(movies[index].title),
+                    subtitle: Text((movies[index].actor)),
+                    trailing: Text((movies[index].releasedYear.toString())),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => MovieInfo(movies[index])),
+                      );
+                    },
+                  ),
+                );
+              },
+            ),
           ),
         ),
       ),
