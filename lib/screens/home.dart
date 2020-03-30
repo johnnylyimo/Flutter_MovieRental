@@ -50,6 +50,7 @@ class _HomePageState extends State<HomePage> {
         child: Container(
           child: FutureBuilder(
             future: getDB.getMovies(),
+            builder: (context, snapshot),
             return ListView.builder(
               itemCount: movies.length ?? 0,
               itemBuilder: (context, index) {
