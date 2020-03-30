@@ -164,14 +164,16 @@ class _MovieInfoState extends State<MovieInfo> {
                         shape: StadiumBorder(),
                         onPressed: () {
                           showDialog(
-                            context: context,
-                            barrierDismissible: true,
-                            builder: (context){
-                              return AlertDialog(
-                                title: Text('Delete a Movie!'),
-                              );
-                            }
-                          )
+                              context: context,
+                              barrierDismissible: true,
+                              builder: (context) {
+                                return AlertDialog(
+                                  title: Text(
+                                    'Delete a Movie!',
+                                    textAlign: TextAlign.center,
+                                  ),
+                                );
+                              });
                         },
                       ),
                     ],
