@@ -5,6 +5,7 @@ class MyTheme {
     return ThemeData(
       scaffoldBackgroundColor: Colors.blue.shade100,
       primarySwatch: Colors.blue,
+      primaryColorLight: Colors.blue.shade50,
     );
   }
 }
