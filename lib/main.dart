@@ -17,9 +17,7 @@ class MovieRental extends StatelessWidget {
       child: MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'MovieRental App',
-          theme: ThemeData(
-            primarySwatch: Colors.blue,
-          ),
+          theme: MyTheme().buildTheme(),
           home: SplashScreen()),
     );
   }
