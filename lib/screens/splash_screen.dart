@@ -26,12 +26,13 @@ class _SplashScreenState extends State<SplashScreen> {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Text(
-            'Movie Rental App',
+            'Welcome',
             style: TextStyle(fontSize: 24.0),
           ),
           FlutterLogo(
             size: 300.0,
-          )
+          ),
+          Text('Movie Rental App')
         ],
       ),
     );
