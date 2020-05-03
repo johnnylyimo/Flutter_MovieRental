@@ -12,33 +12,10 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   List<Movie> movies;
-//  DBManager getDB;
-//  List moviesList;
-//
-//  getMovies() async {
-//    moviesList = await getDB.getMovies() ?? [];
-//    setState(() {
-//      movies = moviesList;
-//    });
-//  }
-//
-//  @override
-//  void initState() {
-//    // TODO: implement initState
-//    super.initState();
-//    getMovies();
-//  }
 
   @override
   Widget build(BuildContext context) {
     final getDB = Provider.of<DBManager>(context);
-
-    () async {
-      List moviesList = await getDB.getMovies() ?? [];
-      setState(() {
-        movies = moviesList;
-      });
-    }();
 
     return Scaffold(
       appBar: AppBar(
@@ -53,7 +30,7 @@ class _HomePageState extends State<HomePage> {
               if (snapshot.hasData) {
                 movies = snapshot.data;
                 return ListView.builder(
-                  itemCount: movies.length ?? 0,
+                  itemCount: movies.length,
                   itemBuilder: (context, index) {
                     return Card(
                       elevation: 6.0,
