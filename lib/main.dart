@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:movierental/model/db_manager.dart';
 import 'package:movierental/screens/splash_screen.dart';
+import 'package:movierental/utils/theme.dart'
 
 void main() {
   runApp(MovieRental());
