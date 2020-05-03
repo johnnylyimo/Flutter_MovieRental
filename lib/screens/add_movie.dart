@@ -41,6 +41,7 @@ class _AddMovieState extends State<AddMovie> {
               children: <Widget>[
                 TextFormField(
                   autofocus: true,
+                  textInputAction: TextInputAction.next,
                   controller: titleController,
                   decoration: InputDecoration(
                     labelText: 'Movie Title',
