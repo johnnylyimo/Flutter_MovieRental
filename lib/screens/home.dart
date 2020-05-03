@@ -33,6 +33,7 @@ class _HomePageState extends State<HomePage> {
                   itemCount: movies.length,
                   itemBuilder: (context, index) {
                     return Card(
+                      color: Theme.of(context).primaryColorLight,
                       elevation: 6.0,
                       shape: StadiumBorder(),
                       child: ListTile(
