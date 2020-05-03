@@ -107,6 +107,9 @@ class _AddMovieState extends State<AddMovie> {
                       borderRadius: BorderRadius.circular(20),
                     ),
                   ),
+                  onEditingComplete: () {
+                    FocusScope.of(context).requestFocus(yearNode);
+                  },
                 ),
                 SizedBox(
                   height: 20.0,
