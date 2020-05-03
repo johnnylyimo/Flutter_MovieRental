@@ -11,12 +11,12 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
 
-    // Future.delayed(Duration(seconds: 3), () {
-    //   Navigator.pushReplacement(
-    //     context,
-    //     MaterialPageRoute(builder: (context) => HomePage()),
-    //   );
-    // });
+    Future.delayed(Duration(seconds: 3), () {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => HomePage()),
+      );
+    });
   }
 
   @override
@@ -24,21 +24,23 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       body: SafeArea(
         child: Container(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Text(
-                'Welcome',
-                style: TextStyle(fontSize: 24.0),
-              ),
-              FlutterLogo(
-                size: 300.0,
-              ),
-              Text(
-                'Movie Rental App',
-                style: TextStyle(fontSize: 24.0),
-              )
-            ],
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Text(
+                  'Welcome',
+                  style: TextStyle(fontSize: 24.0),
+                ),
+                FlutterLogo(
+                  size: 300.0,
+                ),
+                Text(
+                  'Movie Rental App',
+                  style: TextStyle(fontSize: 24.0),
+                )
+              ],
+            ),
           ),
         ),
       ),
