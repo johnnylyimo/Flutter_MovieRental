@@ -14,6 +14,7 @@ class _AddMovieState extends State<AddMovie> {
   final FocusNode titleNode = FocusNode();
   final FocusNode actorNode = FocusNode();
   final FocusNode descNode = FocusNode();
+  final FocusNode yearNode = FocusNode();
 
   // capture input from TextField
   var titleController = TextEditingController();
