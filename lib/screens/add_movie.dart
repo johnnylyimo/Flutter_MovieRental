@@ -93,6 +93,7 @@ class _AddMovieState extends State<AddMovie> {
                 TextFormField(
                   focusNode: descNode,
                   textInputAction: TextInputAction.next,
+                  maxLines: 3,
                   keyboardType: TextInputType.multiline,
                   controller: descController,
                   decoration: InputDecoration(
