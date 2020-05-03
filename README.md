@@ -1,16 +1,16 @@
-# movierental
+# Movie Rental App
 
-A Movie Rental Flutter application.
+A Movie Rental is a android Database Flutter application. let you keep records for movie renting business.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a starting point for a Database  intermediate flutter student who already knew the basic of Flutter app development. 
 
-A few resources to get you started if this is your first Flutter project:
+Here you will learn how to intergrate your app with SQLite Database, interact with single Database table to run CRUD operation in a very simple way.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+print (" SHARING IS CARING ") ;
+
+fmt.Println( " LET ME ALSO MAKE THE THE WORLD BETTER PLACE. ") ;
+
+
