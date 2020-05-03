@@ -22,21 +22,24 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          Text(
-            'Welcome',
-            style: TextStyle(fontSize: 24.0),
-          ),
-          FlutterLogo(
-            size: 300.0,
-          ),
-          Text(
-            'Movie Rental App',
-            style: TextStyle(fontSize: 24.0),
-          )
-        ],
+      body: SafeArea(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text(
+              'Welcome',
+              style: TextStyle(fontSize: 24.0),
+            ),
+            FlutterLogo(
+              size: 300.0,
+            ),
+            Text(
+              'Movie Rental App',
+              style: TextStyle(fontSize: 24.0),
+            )
+          ],
+        ),
       ),
     );
   }
