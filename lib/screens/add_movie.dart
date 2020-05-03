@@ -56,6 +56,9 @@ class _AddMovieState extends State<AddMovie> {
                       borderRadius: BorderRadius.circular(20),
                     ),
                   ),
+                  onEditingComplete: () {
+                    FocusScope.of(context).requestFocus(actorNode);
+                  },
                   validator: (val) =>
                       val.isEmpty ? 'Please enter Movie Title' : null,
                 ),
