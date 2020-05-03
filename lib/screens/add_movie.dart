@@ -12,6 +12,7 @@ class _AddMovieState extends State<AddMovie> {
   final DBManager getDB = DBManager();
 
   final FocusNode titleNode = FocusNode();
+  final FocusNode actorNode = FocusNode();
 
   // capture input from TextField
   var titleController = TextEditingController();
