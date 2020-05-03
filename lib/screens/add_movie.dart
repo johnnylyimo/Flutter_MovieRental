@@ -66,6 +66,7 @@ class _AddMovieState extends State<AddMovie> {
                   height: 20.0,
                 ),
                 TextFormField(
+                  focusNode: actorNode,
                   controller: actorController,
                   decoration: InputDecoration(
                     labelText: 'Movie Actor(s)',
