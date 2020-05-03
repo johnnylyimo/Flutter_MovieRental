@@ -40,6 +40,7 @@ class _AddMovieState extends State<AddMovie> {
             child: Column(
               children: <Widget>[
                 TextFormField(
+                  autofocus: true,
                   controller: titleController,
                   decoration: InputDecoration(
                     labelText: 'Movie Title',
