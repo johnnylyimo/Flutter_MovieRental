@@ -25,7 +25,10 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          Text(),
+          Text(
+            'Movie Rental App',
+            style: TextStyle(fontSize: 24.0),
+          ),
         ],
       ),
     );
