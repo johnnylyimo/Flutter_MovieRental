@@ -115,6 +115,7 @@ class _AddMovieState extends State<AddMovie> {
                   height: 20.0,
                 ),
                 TextFormField(
+                  focusNode: yearNode,
                   keyboardType: TextInputType.number,
                   controller: releasedYearController,
                   decoration: InputDecoration(
