@@ -11,12 +11,12 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
 
-    Future.delayed(Duration(seconds: 3), () {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => HomePage()),
-      );
-    });
+    // Future.delayed(Duration(seconds: 3), () {
+    //   Navigator.pushReplacement(
+    //     context,
+    //     MaterialPageRoute(builder: (context) => HomePage()),
+    //   );
+    // });
   }
 
   @override
@@ -29,7 +29,9 @@ class _SplashScreenState extends State<SplashScreen> {
             'Movie Rental App',
             style: TextStyle(fontSize: 24.0),
           ),
-          FlutterLogo(),
+          FlutterLogo(
+            size: 300.0,
+          )
         ],
       ),
     );
