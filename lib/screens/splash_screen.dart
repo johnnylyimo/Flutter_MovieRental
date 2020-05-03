@@ -32,7 +32,10 @@ class _SplashScreenState extends State<SplashScreen> {
           FlutterLogo(
             size: 300.0,
           ),
-          Text('Movie Rental App')
+          Text(
+            'Movie Rental App',
+            style: TextStyle(fontSize: 24.0),
+          )
         ],
       ),
     );
